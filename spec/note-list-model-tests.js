@@ -44,3 +44,20 @@
   };
   testNoteListCanPrint();
 })(this);
+
+
+(function(exports) {
+  function testNewNotes() {
+    var noteList = new NoteList();
+    noteList.create('newnotes')
+    // assert.isTrue(noteList.notesArray.include('newnotes'))
+    if (noteList.notesArray.includes('newnotes')) {
+      console.log('testNewNotes: Passed')
+    } else {
+      console.log(noteList.notesArray)
+      throw new Error("Error: testNewNotes does not match");
+    }
+  };
+
+  testNewNotes();
+})(this);
