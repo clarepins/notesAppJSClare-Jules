@@ -85,3 +85,13 @@ Made create function
 
 
 TEST
+Expects NoteListView to contain instance of NoteList
+
+ERROR
+(does not)
+
+GREEN
+Added instance to NoteListView as attribute
+
+
+TEST
