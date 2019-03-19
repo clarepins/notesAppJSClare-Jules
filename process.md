@@ -75,3 +75,13 @@ Changed test to expect printAll to return all entries in the array
 
 
 TEST
+Expected .create() to add an entry to notesArray
+
+ERROR
+(create not a function)
+
+GREEN
+Made create function
+
+
+TEST
