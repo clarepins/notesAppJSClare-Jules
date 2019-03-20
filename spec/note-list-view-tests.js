@@ -28,16 +28,18 @@
 })(this);
 
 
-// (function(exports) {
-//   function testStringHtml() {
-//     var noteListView = new NoteListView();
-//     noteListView.notelist.create('text')
-//     if (noteListView.html().includes('<ul><li><div> text </div></li></ul>')) {
-//       console.log("testStringHtml: Yep, contains a string of HTML!");
-//     }
-//     else {
-//       throw new Error("testStringHtml Error:Doesn't return string of HTML")
-//     }
-//   };
-//   testStringHtml();
-// })(this);
+(function(exports) {
+  function testStringHtml() {
+    var noteListView = new NoteListView();
+    noteListView.notelist.create('text')
+    noteListView.html()
+    if (noteListView.htmlArray.includes("<ul><li><div>bob</div></li><li><div>text</div></li></ul>")) {
+      console.log("testStringHtml: Yep, contains a string of HTML!");
+    }
+    else {
+      console.log(noteListView.htmlArray)
+      throw new Error("testStringHtml Error:Doesn't return string of HTML")
+    }
+  };
+  testStringHtml();
+})(this);

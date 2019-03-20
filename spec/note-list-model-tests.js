@@ -16,7 +16,7 @@
   function testNoteListIsInstantiatedWithArray() {
     var noteList = new NoteList();
 
-    if (noteList.notesArray.length !== 0) {
+    if (noteList.notesArray[0] !== 'bob') {
       console.log(noteList.notesArray)
       throw new Error("Error: testNoteListIsInstantiatedWithArray does not match");
     }
