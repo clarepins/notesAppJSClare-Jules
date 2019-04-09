@@ -1,6 +1,6 @@
 # Note App
 
-
+This is a pair project in Javascript where we wrote our own testing framework.
 
 # User Stories
 
